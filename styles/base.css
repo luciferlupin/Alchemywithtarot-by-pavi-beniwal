@@ -17,6 +17,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -27,12 +29,15 @@ body {
   color: var(--text-plum);
   background-color: var(--cream-white);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 img, video, svg {
   display: block;
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 a {
@@ -121,14 +126,19 @@ p:last-child {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  box-sizing: border-box;
 }
 
 .container--narrow {
   max-width: var(--container-narrow);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container--wide {
   max-width: var(--container-wide);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ---- Section ---- */

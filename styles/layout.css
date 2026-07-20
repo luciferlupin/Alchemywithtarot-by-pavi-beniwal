@@ -180,6 +180,8 @@
   align-items: center;
   padding-top: 100px;
   padding-bottom: var(--space-3xl);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -329,6 +331,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   align-items: start;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .pricing-note {
@@ -346,6 +350,8 @@
   gap: var(--space-xl);
   max-width: 750px;
   margin: var(--space-2xl) auto 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .pricing-card--live {
@@ -374,6 +380,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-lg);
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .steps-grid::before {
@@ -393,6 +401,8 @@
   grid-template-columns: 0.85fr 1.15fr;
   gap: var(--space-3xl);
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .founder-image-wrapper {
@@ -448,6 +458,8 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--space-3xl);
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .alchemy-pairs {
@@ -530,6 +542,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ---- Benefits Grid ---- */
@@ -537,6 +551,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ---- Testimonials Grid ---- */
@@ -544,6 +560,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ---- FAQ Container ---- */
@@ -570,6 +588,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-lg);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-section-title {
@@ -616,6 +636,8 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: var(--space-3xl);
   padding: var(--space-4xl) 0 var(--space-2xl);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-brand p {

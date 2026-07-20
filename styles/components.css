@@ -151,6 +151,8 @@
   position: relative;
   transition: all var(--transition-base);
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
@@ -275,6 +277,8 @@
   text-align: center;
   padding: var(--space-xl);
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .step-number {
@@ -587,6 +591,8 @@
   padding: var(--space-2xl);
   position: relative;
   transition: all var(--transition-base);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .testimonial-card:hover {
@@ -624,6 +630,8 @@
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
   transition: all var(--transition-base);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .category-card:hover {
@@ -712,6 +720,8 @@
 .benefit-item {
   text-align: center;
   padding: var(--space-xl);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .benefit-item .icon-circle {
