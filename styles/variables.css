@@ -1,0 +1,103 @@
+/* ============================================
+   TAROT BY PAVI — Design Tokens
+   ============================================ */
+
+:root {
+  /* ---- Colours ---- */
+  --lavender: #B9A7E8;
+  --soft-purple: #D8CCF2;
+  --pale-lavender: #F1ECFA;
+  --pattern-purple: #75447F;
+  --deep-plum: #4A2855;
+  --cream-white: #FFF9F5;
+  --warm-peach: #E9A783;
+  --muted-gold: #D8A36D;
+  --text-plum: #3C2942;
+
+  /* Derived */
+  --text-body: #4D3A54;
+  --text-light: #6B5A73;
+  --text-on-dark: #F5F0FA;
+  --border-soft: rgba(185, 167, 232, 0.25);
+  --border-medium: rgba(185, 167, 232, 0.4);
+
+  /* ---- Typography ---- */
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+
+  --fs-display: clamp(2.25rem, 5vw, 3.75rem);
+  --fs-h1: clamp(2rem, 4vw, 3.25rem);
+  --fs-h2: clamp(1.75rem, 3.5vw, 2.75rem);
+  --fs-h3: clamp(1.35rem, 2.5vw, 1.75rem);
+  --fs-h4: clamp(1.15rem, 2vw, 1.35rem);
+  --fs-body: clamp(0.95rem, 1.2vw, 1.1rem);
+  --fs-body-lg: clamp(1.05rem, 1.4vw, 1.25rem);
+  --fs-small: clamp(0.8rem, 1vw, 0.9rem);
+  --fs-xs: 0.75rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-heading: 1.2;
+  --lh-body: 1.7;
+  --ls-heading: -0.01em;
+  --ls-wide: 0.08em;
+
+  /* ---- Spacing ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  --section-padding: clamp(4rem, 8vw, 7rem) 0;
+  --container-max: 1200px;
+  --container-narrow: 900px;
+  --container-wide: 1400px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+
+  /* ---- Borders & Radius ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 40px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-soft: 0 4px 24px rgba(74, 40, 85, 0.06);
+  --shadow-medium: 0 8px 32px rgba(74, 40, 85, 0.1);
+  --shadow-elevated: 0 16px 48px rgba(74, 40, 85, 0.14);
+  --shadow-glow-peach: 0 0 40px rgba(233, 167, 131, 0.2);
+  --shadow-glow-lavender: 0 0 40px rgba(185, 167, 232, 0.25);
+  --shadow-glow-gold: 0 0 30px rgba(216, 163, 109, 0.2);
+
+  /* ---- Glass ---- */
+  --glass-bg: rgba(255, 249, 245, 0.82);
+  --glass-bg-strong: rgba(255, 249, 245, 0.92);
+  --glass-bg-dark: rgba(74, 40, 85, 0.85);
+  --glass-bg-lavender: rgba(241, 236, 250, 0.85);
+  --glass-blur: 16px;
+  --glass-blur-strong: 24px;
+  --glass-border: rgba(255, 255, 255, 0.4);
+
+  /* ---- Transitions ---- */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- Z-Index ---- */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-navbar: 500;
+  --z-modal: 1000;
+  --z-whatsapp: 900;
+}

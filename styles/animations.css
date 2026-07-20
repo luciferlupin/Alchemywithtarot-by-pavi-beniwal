@@ -1,0 +1,170 @@
+/* ============================================
+   TAROT BY PAVI — Animations
+   ============================================ */
+
+/* ---- Scroll Reveal ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ---- Fade In Variants ---- */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---- Scale In ---- */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---- Hero Float ---- */
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+/* ---- Soft Pulse ---- */
+@keyframes softPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* ---- Glow Pulse ---- */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(185, 167, 232, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(185, 167, 232, 0.4); }
+}
+
+/* ---- Shimmer ---- */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ---- Crystal Rotate (Alchemy) ---- */
+@keyframes crystalGlow {
+  0% { 
+    filter: drop-shadow(0 0 10px rgba(185, 167, 232, 0.3));
+    transform: rotate(0deg);
+  }
+  33% { 
+    filter: drop-shadow(0 0 20px rgba(233, 167, 131, 0.4));
+    transform: rotate(2deg);
+  }
+  66% { 
+    filter: drop-shadow(0 0 25px rgba(216, 163, 109, 0.4));
+    transform: rotate(-2deg);
+  }
+  100% { 
+    filter: drop-shadow(0 0 10px rgba(185, 167, 232, 0.3));
+    transform: rotate(0deg);
+  }
+}
+
+/* ---- Particle Float (Alchemy) ---- */
+@keyframes particleFloat {
+  0% { 
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% { 
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: translateY(-40px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* ---- Star Twinkle ---- */
+@keyframes starTwinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ---- Gradient Shift ---- */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animated {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+/* ---- Parallax (desktop only) ---- */
+@media (min-width: 768px) {
+  .parallax-bg {
+    will-change: transform;
+  }
+}
+
+@media (max-width: 767px) {
+  .parallax-bg {
+    transform: none !important;
+  }
+}
+
+/* ---- Reduce Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
