@@ -11,6 +11,8 @@
   z-index: var(--z-navbar);
   padding: var(--space-md) 0;
   transition: all var(--transition-base);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar.scrolled {
@@ -77,10 +79,12 @@
   color: var(--text-plum);
   position: relative;
   padding: var(--space-xs) 0;
+  white-space: nowrap;
 }
 
 .navbar:not(.scrolled) .nav-link {
   color: var(--cream-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link::after {
@@ -126,6 +130,7 @@
 
 .navbar:not(.scrolled) .nav-toggle span {
   background: var(--cream-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav-toggle.active span:nth-child(1) {
