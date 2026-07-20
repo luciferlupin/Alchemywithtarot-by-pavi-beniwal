@@ -26,6 +26,7 @@ body {
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
   color: var(--text-plum);
   background-color: var(--cream-white);
   overflow-x: hidden;
@@ -94,14 +95,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--deep-plum);
 }
 
-h1 { font-size: var(--fs-h1); }
-h2 { font-size: var(--fs-h2); }
-h3 { font-size: var(--fs-h3); }
-h4 { font-size: var(--fs-h4); }
+h1 { font-size: var(--fs-h1); margin-bottom: var(--space-xl); }
+h2 { font-size: var(--fs-h2); margin-bottom: var(--space-lg); }
+h3 { font-size: var(--fs-h3); margin-bottom: var(--space-md); }
+h4 { font-size: var(--fs-h4); margin-bottom: var(--space-sm); }
 
 p {
   margin-bottom: var(--space-md);
   color: var(--text-body);
+  line-height: var(--lh-body);
 }
 
 p:last-child {

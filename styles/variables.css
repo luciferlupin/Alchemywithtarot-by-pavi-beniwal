@@ -40,27 +40,31 @@
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  --lh-heading: 1.2;
-  --lh-body: 1.7;
-  --ls-heading: -0.01em;
-  --ls-wide: 0.08em;
+  --lh-heading: 1.1;
+  --lh-body: 1.6;
+  --lh-tight: 1.2;
+  --ls-heading: -0.02em;
+  --ls-body: 0.01em;
+  --ls-wide: 0.05em;
 
   /* ---- Spacing ---- */
-  --space-xs: 0.625rem;
-  --space-sm: 0.875rem;
-  --space-md: 1.125rem;
-  --space-lg: 1.75rem;
-  --space-xl: 2.25rem;
-  --space-2xl: 3.5rem;
-  --space-3xl: 4.5rem;
-  --space-4xl: 7rem;
-  --space-5xl: 9rem;
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 0.75rem;  /* 12px */
+  --space-md: 1rem;     /* 16px */
+  --space-lg: 1.5rem;   /* 24px */
+  --space-xl: 2rem;     /* 32px */
+  --space-2xl: 3rem;    /* 48px */
+  --space-3xl: 4rem;    /* 64px */
+  --space-4xl: 6rem;    /* 96px */
+  --space-5xl: 8rem;    /* 128px */
+  --space-6xl: 10rem;   /* 160px */
 
-  --section-padding: clamp(5rem, 10vw, 8rem) 0;
+  --section-padding: clamp(6rem, 12vw, 10rem) 0;
+  --section-padding-sm: clamp(4rem, 8vw, 6rem) 0;
   --container-max: 1200px;
   --container-narrow: 900px;
   --container-wide: 1400px;
-  --container-padding: clamp(1.25rem, 5vw, 2.5rem);
+  --container-padding: clamp(1.5rem, 5vw, 3rem);
 
   /* ---- Borders & Radius ---- */
   --radius-sm: 8px;
