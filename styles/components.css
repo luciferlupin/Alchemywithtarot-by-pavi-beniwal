@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-xs);
-  padding: 0.875rem 2rem;
+  padding: 1rem 2rem;
   font-family: var(--font-body);
   font-size: var(--fs-small);
   font-weight: var(--fw-semibold);
@@ -19,6 +19,8 @@
   white-space: nowrap;
   position: relative;
   overflow: hidden;
+  min-height: 48px;
+  min-width: 44px;
 }
 
 .btn::after {
@@ -85,13 +87,15 @@
 }
 
 .btn--sm {
-  padding: 0.625rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: var(--fs-xs);
+  min-height: 42px;
 }
 
 .btn--lg {
-  padding: 1rem 2.5rem;
+  padding: 1.125rem 2.5rem;
   font-size: var(--fs-small);
+  min-height: 52px;
 }
 
 /* ---- Glass Card ---- */
@@ -147,6 +151,28 @@
   position: relative;
   transition: all var(--transition-base);
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .pricing-card {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .pricing-features {
+    margin: var(--space-lg) 0;
+  }
+
+  .pricing-features li {
+    font-size: var(--fs-body);
+  }
+
+  .pricing-amount {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .pricing-title {
+    font-size: var(--fs-h3);
+  }
 }
 
 .pricing-card::before {
@@ -291,6 +317,18 @@
   transition: all var(--transition-base);
 }
 
+@media (max-width: 767px) {
+  .icon-circle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .icon-circle svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .icon-circle svg {
   width: 28px;
   height: 28px;
@@ -334,6 +372,19 @@
   text-align: left;
   cursor: pointer;
   transition: all var(--transition-fast);
+  min-height: 48px;
+}
+
+@media (max-width: 767px) {
+  .faq-question {
+    padding: var(--space-lg) var(--space-lg);
+    font-size: var(--fs-body-lg);
+  }
+
+  .faq-answer-inner {
+    padding: 0 var(--space-lg) var(--space-lg);
+    font-size: var(--fs-body);
+  }
 }
 
 .faq-question:hover {
@@ -404,13 +455,27 @@
 .form-textarea,
 .form-select {
   width: 100%;
-  padding: 0.875rem 1.25rem;
+  padding: 1rem 1.25rem;
   border: 1.5px solid var(--border-soft);
   border-radius: var(--radius-md);
   background: var(--cream-white);
   color: var(--text-plum);
   transition: all var(--transition-fast);
   font-size: var(--fs-body);
+  min-height: 48px;
+}
+
+@media (max-width: 767px) {
+  .form-input,
+  .form-textarea,
+  .form-select {
+    padding: 0.875rem 1rem;
+    font-size: 16px; /* Prevents iOS zoom */
+  }
+
+  .form-textarea {
+    min-height: 120px;
+  }
 }
 
 .form-input:focus,
