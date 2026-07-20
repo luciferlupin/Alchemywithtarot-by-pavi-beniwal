@@ -21,6 +21,96 @@
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
+/* ---- Text Reveal Animations ---- */
+.text-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-reveal-down {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-reveal-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Character Animation ---- */
+.char-animate {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%) rotateX(-90deg);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  perspective: 1000px;
+}
+
+.char-animate.visible {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+/* ---- Word Animation ---- */
+.word-animate {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.word-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Stagger Animation ---- */
+.stagger-reveal > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stagger-reveal.visible > *:nth-child(1) { transition-delay: 0.05s; }
+.stagger-reveal.visible > *:nth-child(2) { transition-delay: 0.1s; }
+.stagger-reveal.visible > *:nth-child(3) { transition-delay: 0.15s; }
+.stagger-reveal.visible > *:nth-child(4) { transition-delay: 0.2s; }
+.stagger-reveal.visible > *:nth-child(5) { transition-delay: 0.25s; }
+.stagger-reveal.visible > *:nth-child(6) { transition-delay: 0.3s; }
+.stagger-reveal.visible > *:nth-child(7) { transition-delay: 0.35s; }
+.stagger-reveal.visible > *:nth-child(8) { transition-delay: 0.4s; }
+.stagger-reveal.visible > *:nth-child(9) { transition-delay: 0.45s; }
+.stagger-reveal.visible > *:nth-child(10) { transition-delay: 0.5s; }
+
+.stagger-reveal.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ---- Fade In Variants ---- */
 .reveal-left {
   opacity: 0;
@@ -131,6 +221,209 @@
 .gradient-animated {
   background-size: 200% 200%;
   animation: gradientShift 8s ease-in-out infinite;
+}
+
+/* ---- Smooth Fade In ---- */
+@keyframes smoothFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.smooth-fade-in {
+  animation: smoothFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ---- Slide In From Left ---- */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ---- Slide In From Right ---- */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ---- Scale In ---- */
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ---- Bounce In ---- */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-in {
+  animation: bounceIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ---- Rotate In ---- */
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+.rotate-in {
+  animation: rotateIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ---- Text Glow ---- */
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(185, 167, 232, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(185, 167, 232, 0.6), 0 0 30px rgba(233, 167, 131, 0.4);
+  }
+}
+
+.text-glow {
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+/* ---- Floating Animation ---- */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* ---- Pulse Animation ---- */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ---- Shake Animation ---- */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.8s ease-in-out;
+}
+
+/* ---- Typewriter Effect ---- */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--deep-plum);
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--deep-plum);
+  animation: typewriter 3s steps(40) forwards, blink 0.8s step-end infinite;
+}
+
+/* ---- Counter Animation ---- */
+@keyframes countUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.counter-animate {
+  animation: countUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 /* ---- Parallax (desktop only) ---- */

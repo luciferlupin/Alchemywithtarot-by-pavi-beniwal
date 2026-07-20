@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initSmoothScroll();
   initScrollReveal();
+  initTextAnimations();
+  initCharacterAnimation();
+  initStaggerAnimations();
   initFaqAccordion();
   initBookingForm();
   initParallax();
@@ -126,7 +129,7 @@ function initSmoothScroll() {
 // SCROLL REVEAL
 // ============================================
 function initScrollReveal() {
-  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .text-reveal, .text-reveal-up, .text-reveal-down');
   if (!reveals.length) return;
 
   const observer = new IntersectionObserver((entries) => {
@@ -142,6 +145,93 @@ function initScrollReveal() {
   });
 
   reveals.forEach(el => observer.observe(el));
+}
+
+// ============================================
+// TEXT ANIMATIONS
+// ============================================
+function initTextAnimations() {
+  const textElements = document.querySelectorAll('h1, h2, h3, h4, .hero-text, .pricing-title, .section-header p');
+  
+  textElements.forEach(el => {
+    if (!el.classList.contains('text-reveal') && !el.classList.contains('text-reveal-up')) {
+      el.classList.add('text-reveal');
+    }
+  });
+
+  // Add glow animation to highlighted text
+  const highlights = document.querySelectorAll('.highlight');
+  highlights.forEach(el => {
+    el.classList.add('text-glow');
+  });
+
+  // Add floating animation to hero image
+  const heroImage = document.querySelector('.hero-image-frame');
+  if (heroImage) {
+    heroImage.classList.add('floating');
+  }
+
+  // Add pulse to buttons
+  const primaryButtons = document.querySelectorAll('.btn--primary');
+  primaryButtons.forEach(btn => {
+    btn.classList.add('pulse');
+  });
+}
+
+// ============================================
+// CHARACTER ANIMATION
+// ============================================
+function initCharacterAnimation() {
+  const charElements = document.querySelectorAll('.char-animate');
+  
+  charElements.forEach(el => {
+    const text = el.textContent;
+    el.textContent = '';
+    
+    text.split('').forEach((char, index) => {
+      const span = document.createElement('span');
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.transitionDelay = `${index * 0.03}s`;
+      el.appendChild(span);
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        const chars = entry.target.querySelectorAll('span');
+        chars.forEach(char => char.classList.add('visible'));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  charElements.forEach(el => observer.observe(el));
+}
+
+// ============================================
+// STAGGER ANIMATIONS
+// ============================================
+function initStaggerAnimations() {
+  const staggerElements = document.querySelectorAll('.stagger-reveal');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  staggerElements.forEach(el => observer.observe(el));
 }
 
 // ============================================
