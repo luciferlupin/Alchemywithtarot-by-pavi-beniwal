@@ -53,14 +53,14 @@
   --space-md: 1rem;     /* 16px */
   --space-lg: 1.5rem;   /* 24px */
   --space-xl: 2rem;     /* 32px */
-  --space-2xl: 3rem;    /* 48px */
-  --space-3xl: 4rem;    /* 64px */
-  --space-4xl: 6rem;    /* 96px */
-  --space-5xl: 8rem;    /* 128px */
-  --space-6xl: 10rem;   /* 160px */
+  --space-2xl: 2.5rem;  /* 40px */
+  --space-3xl: 3rem;    /* 48px */
+  --space-4xl: 4rem;    /* 64px */
+  --space-5xl: 5rem;    /* 80px */
+  --space-6xl: 6rem;    /* 96px */
 
-  --section-padding: clamp(6rem, 12vw, 10rem) 0;
-  --section-padding-sm: clamp(4rem, 8vw, 6rem) 0;
+  --section-padding: clamp(3rem, 5vw, 4.5rem) 0;
+  --section-padding-sm: clamp(2rem, 3.5vw, 3rem) 0;
   --container-max: 1200px;
   --container-narrow: 900px;
   --container-wide: 1400px;

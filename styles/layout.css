@@ -540,6 +540,22 @@
   margin-bottom: var(--space-xl);
 }
 
+.instagram-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2xl);
+  margin-top: var(--space-4xl);
+  align-items: flex-start;
+}
+
+.instagram-grid .instagram-embed-card {
+  flex: 1 1 340px;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+}
+
 /* ---- Category Grid ---- */
 .category-grid {
   display: grid;
