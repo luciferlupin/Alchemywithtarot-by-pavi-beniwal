@@ -471,7 +471,7 @@ window.switchReviewTab = function(tab) {
 // COPY UPI ID HELPER
 // ============================================
 window.copyUpiId = function() {
-  const upiId = 'pavibenwal@paytm';
+  const upiId = '9811564198@ptsbi';
   navigator.clipboard.writeText(upiId).then(() => {
     const btn = document.getElementById('copyUpiBtn');
     if (btn) {
@@ -486,6 +486,6 @@ window.copyUpiId = function() {
       }, 2000);
     }
   }).catch(() => {
-    alert('UPI ID: pavibenwal@paytm');
+    alert('UPI ID: 9811564198@ptsbi');
   });
 };
