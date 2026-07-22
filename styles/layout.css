@@ -1011,7 +1011,19 @@
   }
 
   .booking-form {
-    padding: var(--space-2xl) var(--space-xl);
+    padding: var(--space-lg) var(--space-md);
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .booking-form-col-right {
+    padding: 16px !important;
+    border-radius: 14px !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .mobile-booking-sticky {
@@ -1085,5 +1097,18 @@
 
   .section-header p {
     font-size: var(--fs-body);
+  }
+
+  .booking-form {
+    padding: 16px 12px;
+  }
+
+  .upi-box-compact {
+    padding: 12px !important;
+  }
+
+  .upi-box-compact #upiId {
+    font-size: 0.92rem !important;
+    word-break: break-all;
   }
 }
