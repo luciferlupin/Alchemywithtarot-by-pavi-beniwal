@@ -205,12 +205,14 @@
 
 .hero-label {
   display: inline-block;
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-semibold);
+  font-size: 1.15rem;
+  font-weight: var(--fw-bold);
   letter-spacing: var(--ls-wide);
   text-transform: uppercase;
   color: var(--warm-peach);
   margin-bottom: var(--space-lg);
+  line-height: 1.4;
+  text-shadow: 0 0 12px rgba(233, 167, 131, 0.6), 0 0 24px rgba(233, 167, 131, 0.3);
 }
 
 .hero h1 {
