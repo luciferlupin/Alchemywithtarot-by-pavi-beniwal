@@ -218,8 +218,11 @@
     <div class="container">
       <div class="philosophy-content reveal">
         <span class="section-label">Philosophy</span>
-        <h2>Tarot Is Not Fixed Fate.<br/><span class="highlight">It Is a Mirror.</span></h2>
+        <h2>Tarot — <span class="highlight">A Mirror and a Map.</span></h2>
         <div class="section-divider"></div>
+        <p class="philosophy-lead" style="font-size: var(--fs-h4); color: var(--deep-plum); font-weight: var(--fw-semibold); font-family: var(--font-serif); margin-bottom: var(--space-md);">
+          A mirror that reflects your inner world, and a map that illuminates the path forward.
+        </p>
         <p>Tarot is a divine medium which brings clarity to what feels uncertain — the fears, the desires, the emotional patterns quietly shaping your next step. Through intuition, psychic insight, and psychological depth, tarot becomes a medium of guidance — lighting the path forward with clarity you can trust.</p>
         <p>This is where alchemy begins. Not with fate handed to you, but with truth revealed to you — the kind that turns confusion into direction, and pain into power. Every reading is a step toward taking charge of your own transformation, guided, held, and never alone.</p>
       </div>
@@ -231,80 +234,204 @@
        ============================================ -->
   <section class="section section--cream" id="testimonials">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Experiences</span>
-        <h2>Words from the Community</h2>
-        <p>Real stories and breakthroughs shared by seekers who experienced Pavi's intuitive readings.</p>
+      <div class="section-header reveal" style="text-align: center; margin-bottom: var(--space-xl);">
+        <span class="section-label">Real Client Feedback</span>
+        <h2>Client Experiences & Reviews</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Authentic feedback and breakthroughs shared by seekers guided by Pavi's intuitive readings.</p>
+        
+        <!-- Apple Segmented Control -->
+        <div class="apple-segmented-control" style="margin-top: var(--space-xl);">
+          <button class="apple-segment-btn active" id="tabStoriesBtn" onclick="switchReviewTab('stories')">
+            <span>💬</span> Client Stories
+          </button>
+          <button class="apple-segment-btn" id="tabScreenshotsBtn" onclick="switchReviewTab('screenshots')">
+            <span>📸</span> Real DM Screenshots
+          </button>
+        </div>
       </div>
 
-      <div class="testimonials-grid">
-        <!-- Testimonial 1 -->
+      <!-- STORIES VIEW (TEXT CARDS) -->
+      <div class="testimonials-grid" id="testimonialsStoriesView">
+        <!-- Review 1 -->
         <div class="testimonial-card reveal reveal-delay-1">
           <div class="testimonial-header">
             <div class="testimonial-user">
-              <div class="user-avatar" style="background: linear-gradient(135deg, #FF512F, #DD2476);">S</div>
+              <div class="user-avatar" style="background: linear-gradient(135deg, #6366F1, #8B5CF6);">C</div>
               <div>
-                <h4 class="user-handle">@shreya.s</h4>
-                <p class="testimonial-source">via Instagram Highlights</p>
+                <h4 class="user-handle">Verified Seekers</h4>
+                <p class="testimonial-source"><span>✓</span> Instagram DM · 2 Choices Guidance</p>
               </div>
             </div>
             <div class="testimonial-rating">
-              <span class="star">✦</span><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
             </div>
           </div>
-          <p class="testimonial-text">"Honestly Pavi, your reading was so spot on. It felt like you knew exactly what has been happening in my thoughts for the past six months. The guidance on career alignment gave me the push I needed to take the new role. Thank you so much! 🥺❤️"</p>
+          <p class="testimonial-text">"So as i told you earlier i am not a keen believer in tarot and all but still somehow i was drawn to you to tell me what the energy wants to convey as i was going through lot of confusions and turmoil in my life. Whatever you said made so much sense to a non believer like me as it felt you were talking to my confused soul. You told me how i would be having two choices and whatever m gonna choose would be better decision. Your words fueled me but still i looked for more clarity through astrology and to my shock all the things you said were repeated by pandit ji too — <em>'i will have two options and there would be a bit of confusion and difficulty but still my decision would be best and i should take risk'</em> so now m taking my chance and would be looking forward to my upcoming next session for more clarity. Thank you so much ✨🧿"</p>
           <div class="testimonial-footer">
-            <span class="tag tag--lavender">Career & Direction</span>
-            <span class="testimonial-date">2 weeks ago</span>
+            <span class="tag tag--lavender">Astrology & Tarot Validation</span>
+            <button class="view-screenshot-btn" onclick="openReviewModal('/images/reviews/review-1.jpg')">
+              View Screenshot ↗
+            </button>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
+        <!-- Review 2 -->
         <div class="testimonial-card reveal reveal-delay-2">
           <div class="testimonial-header">
             <div class="testimonial-user">
-              <div class="user-avatar" style="background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);">A</div>
+              <div class="user-avatar" style="background: linear-gradient(135deg, #EC4899, #F43F5E);">A</div>
               <div>
-                <h4 class="user-handle">@advait_m</h4>
-                <p class="testimonial-source">via Instagram Highlights</p>
+                <h4 class="user-handle">Verified Seekers</h4>
+                <p class="testimonial-source"><span>✓</span> Instagram DM · Intuitive Clarity</p>
               </div>
             </div>
             <div class="testimonial-rating">
-              <span class="star">✦</span><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
             </div>
           </div>
-          <p class="testimonial-text">"The 30-minute video call reading was the best investment I made this month. You created such a warm, safe space for me to talk about my relationship blockages. The perspective you shared about my emotional cycles was a complete eye-opener."</p>
+          <p class="testimonial-text">"had such a lovely and eye opening experience with my tarot reading honestly pavi. you made me feel super comfortable throughout and the reading was incredibly accurate and insightful. a lot of what you said genuinely resonated with me and gave me so much clarity. i can tell you really put you energy and intuition into what you do. ✨ and honestly whenever you’re too lost you really need someone to spiritually guide you so that you can take your decisions better and work with a clear mind accordingly in life!! 💖💖💖"</p>
           <div class="testimonial-footer">
-            <span class="tag tag--gold">Video Call Reading</span>
-            <span class="testimonial-date">1 month ago</span>
+            <span class="tag tag--gold">Accurate & Insightful</span>
+            <button class="view-screenshot-btn" onclick="openReviewModal('/images/reviews/review-2.jpg')">
+              View Screenshot ↗
+            </button>
           </div>
         </div>
 
-        <!-- Testimonial 3 -->
+        <!-- Review 3 -->
         <div class="testimonial-card reveal reveal-delay-3">
           <div class="testimonial-header">
             <div class="testimonial-user">
-              <div class="user-avatar" style="background: linear-gradient(135deg, #8A2387, #E94057, #F27121);">R</div>
+              <div class="user-avatar" style="background: linear-gradient(135deg, #10B981, #059669);">M</div>
               <div>
-                <h4 class="user-handle">@ritika.g</h4>
-                <p class="testimonial-source">via Instagram DM</p>
+                <h4 class="user-handle">Verified Seekers</h4>
+                <p class="testimonial-source"><span>✓</span> WhatsApp Voice Note · Energy Reading</p>
               </div>
             </div>
             <div class="testimonial-rating">
-              <span class="star">✦</span><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
             </div>
           </div>
-          <p class="testimonial-text">"Hey Pavi, just wanted to drop a text saying the WhatsApp voice note reading was absolutely beautiful. I’ve listened to it three times already. It didn't feel like typical fortune telling; it felt like a healing guidance session that highlighted my own inner strength. ❤️✨"</p>
+          <p class="testimonial-text">"Thank you so much Pavi, i cant express how releiving these reading have been. Sometimes we need a person to guide us and correct us at cross roads of life. Have spoken to many tarot reader and astrogers. No disrespect to anyone, but the way you pick energies is something magical and divine! 🙏🔱 Thank you very much, i will work upon the suggestions ❤️❤️ god bless you take care 🤗"</p>
           <div class="testimonial-footer">
-            <span class="tag tag--lavender">Two Questions</span>
-            <span class="testimonial-date">3 days ago</span>
+            <span class="tag tag--lavender">Magical & Divine Energies</span>
+            <button class="view-screenshot-btn" onclick="openReviewModal('/images/reviews/review-3.jpg')">
+              View Screenshot ↗
+            </button>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-header">
+            <div class="testimonial-user">
+              <div class="user-avatar" style="background: linear-gradient(135deg, #F59E0B, #D97706);">R</div>
+              <div>
+                <h4 class="user-handle">Verified Seekers</h4>
+                <p class="testimonial-source"><span>✓</span> Story Repost · Raw & Honest</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+          </div>
+          <div class="testimonial-ethos-note">
+            <em>"No sugar coating here, no false promises, I don’t believe in hooking you to false hopes and playing with your psyche 🪄🙏"</em>
+          </div>
+          <p class="testimonial-text">"You are truly blessed and your abiltiy to inteprit cards is immaculate and raw, in a sense that there is no frabication, it is what it is!! I spoke to you for the first time and you read my situation as if you are reading my mind and feelings, I pinched myself 😅 and still processing. I am definitely Recommending you to my friends and family! ❤️❤️"</p>
+          <div class="testimonial-footer">
+            <span class="tag tag--gold">100% Genuine & Raw</span>
+            <button class="view-screenshot-btn" onclick="openReviewModal('/images/reviews/review-4.jpg')">
+              View Screenshot ↗
+            </button>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-header">
+            <div class="testimonial-user">
+              <div class="user-avatar" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);">G</div>
+              <div>
+                <h4 class="user-handle">Verified Seekers</h4>
+                <p class="testimonial-source"><span>✓</span> Repeat Session · Inner Peace</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+          </div>
+          <p class="testimonial-text">"Hi Pavi, i want to express my deepest gratitude for your transformative guidance. 😇🧿🙏 It has helped me let go of burdens I didn't even realize I was carrying and brought back my inner spark. Following your advice has brought me a deep sense of peace, positivity, calm. Your insights allowed me to see far beyond my current perceptions, and I now feel grounded enough to focus on my work and future with total optimism. Coming back for a second reading was truly one of the best decisions I've made. I am incredibly grateful for your help ❤️❤️❤️ god bless you abundantly!!!"</p>
+          <div class="testimonial-footer">
+            <span class="tag tag--lavender">Transformative Guidance</span>
+            <button class="view-screenshot-btn" onclick="openReviewModal('/images/reviews/review-5.jpg')">
+              View Screenshot ↗
+            </button>
           </div>
         </div>
       </div>
 
-      <div class="testimonial-cta reveal" style="text-align: center; margin-top: var(--space-xl);">
+      <!-- SCREENSHOTS GALLERY VIEW (HIDDEN BY DEFAULT) -->
+      <div class="screenshots-gallery-grid" id="testimonialsScreenshotsView" style="display: none;">
+        <div class="screenshot-gallery-card" onclick="openReviewModal('/images/reviews/review-1.jpg')">
+          <div class="screenshot-img-wrapper">
+            <img src="/images/reviews/review-1.jpg" alt="Real Chat Review 1" loading="lazy" />
+            <div class="screenshot-hover-badge"><span>🔍 Expand DM Screenshot</span></div>
+          </div>
+          <div class="screenshot-caption">
+            <strong>Astrology & Tarot Validation</strong>
+            <p>Non-believer drawn to tarot; Pandit ji repeated exact same prediction.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-gallery-card" onclick="openReviewModal('/images/reviews/review-2.jpg')">
+          <div class="screenshot-img-wrapper">
+            <img src="/images/reviews/review-2.jpg" alt="Real Chat Review 2" loading="lazy" />
+            <div class="screenshot-hover-badge"><span>🔍 Expand DM Screenshot</span></div>
+          </div>
+          <div class="screenshot-caption">
+            <strong>Accurate & Insightful</strong>
+            <p>"Super comfortable... incredibly accurate and gave me so much clarity."</p>
+          </div>
+        </div>
+
+        <div class="screenshot-gallery-card" onclick="openReviewModal('/images/reviews/review-3.jpg')">
+          <div class="screenshot-img-wrapper">
+            <img src="/images/reviews/review-3.jpg" alt="Real Chat Review 3" loading="lazy" />
+            <div class="screenshot-hover-badge"><span>🔍 Expand DM Screenshot</span></div>
+          </div>
+          <div class="screenshot-caption">
+            <strong>Magical & Divine Energies</strong>
+            <p>"The way you pick energies is something magical and divine!"</p>
+          </div>
+        </div>
+
+        <div class="screenshot-gallery-card" onclick="openReviewModal('/images/reviews/review-4.jpg')">
+          <div class="screenshot-img-wrapper">
+            <img src="/images/reviews/review-4.jpg" alt="Real Chat Review 4" loading="lazy" />
+            <div class="screenshot-hover-badge"><span>🔍 Expand DM Screenshot</span></div>
+          </div>
+          <div class="screenshot-caption">
+            <strong>Immaculate & Raw</strong>
+            <p>"Read my situation as if reading my mind and feelings, pinched myself!"</p>
+          </div>
+        </div>
+
+        <div class="screenshot-gallery-card" onclick="openReviewModal('/images/reviews/review-5.jpg')">
+          <div class="screenshot-img-wrapper">
+            <img src="/images/reviews/review-5.jpg" alt="Real Chat Review 5" loading="lazy" />
+            <div class="screenshot-hover-badge"><span>🔍 Expand DM Screenshot</span></div>
+          </div>
+          <div class="screenshot-caption">
+            <strong>Transformative & Repeat Session</strong>
+            <p>"Helped me let go of burdens... coming back for 2nd reading was best decision."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-cta reveal" style="text-align: center; margin-top: var(--space-2xl);">
         <a href="https://instagram.com/alchemywithtarot" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">
-          View Instagram Highlights ✦
+          Follow @alchemywithtarot on Instagram ✦
         </a>
       </div>
     </div>
@@ -315,153 +442,101 @@
        ============================================ -->
   <section class="section section--pale" id="pricing">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Readings</span>
+      <div class="section-header reveal" style="text-align: center; margin-bottom: var(--space-2xl);">
+        <span class="section-label">Investment</span>
         <h2>Choose Your Reading</h2>
-        <p>Each reading is personally interpreted with emotional and situational insight. Every package includes a brief general guidance message, complimentary.</p>
+        <p style="max-width: 620px; margin: 0 auto;">Every reading is personally interpreted with deep emotional insight. Complimentary general guidance included with every package.</p>
       </div>
 
+      <!-- Standard Packages Grid -->
       <div class="pricing-grid pricing-grid--text">
         <!-- ₹222 -->
         <div class="pricing-card reveal reveal-delay-1">
-          <div class="pricing-amount"><span class="currency">₹</span>222</div>
-          <h3 class="pricing-title">One Question</h3>
+          <div class="pricing-card-header">
+            <span class="package-type-tag">Standard Package</span>
+            <div class="pricing-amount"><span class="currency">₹</span>222</div>
+            <h3 class="pricing-title">One Question</h3>
+          </div>
           <ul class="pricing-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Personal interpretation of your question
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Emotional and situational insight
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Brief general guidance included
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Delivery within 48 hours
-            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Personal interpretation of 1 question</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Emotional & situational insight</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Complimentary general guidance</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Delivery within 48 hours</li>
           </ul>
-          <a href="#booking" class="btn btn--secondary" data-package="one-question">Book This Reading</a>
+          <a href="#booking" class="btn btn--secondary" data-package="one-question" style="width: 100%; border-radius: 9999px;">Book This Reading ✦</a>
         </div>
 
-        <!-- ₹333 (Featured) -->
+        <!-- ₹333 (Featured Most Chosen) -->
         <div class="pricing-card pricing-card--featured reveal reveal-delay-2">
-          <span class="pricing-badge">Most Chosen</span>
-          <div class="pricing-amount"><span class="currency">₹</span>333</div>
-          <h3 class="pricing-title">Two Questions</h3>
+          <span class="pricing-badge">✦ Most Popular</span>
+          <div class="pricing-card-header">
+            <span class="package-type-tag" style="color: var(--warm-peach);">Best Value</span>
+            <div class="pricing-amount"><span class="currency">₹</span>333</div>
+            <h3 class="pricing-title">Two Questions</h3>
+          </div>
           <ul class="pricing-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Personal interpretation of each question
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Emotional and situational insight
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Brief general guidance included
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Delivery within 48 hours
-            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Personal interpretation of each question</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Deep emotional & situational clarity</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Complimentary general guidance</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Delivery within 48 hours</li>
           </ul>
-          <a href="#booking" class="btn btn--primary" data-package="two-questions">Book This Reading</a>
+          <a href="#booking" class="btn btn--primary" data-package="two-questions" style="width: 100%; border-radius: 9999px;">Book This Reading ✦</a>
         </div>
 
         <!-- ₹555 -->
         <div class="pricing-card reveal reveal-delay-3">
-          <div class="pricing-amount"><span class="currency">₹</span>555</div>
-          <h3 class="pricing-title">Three Questions</h3>
+          <div class="pricing-card-header">
+            <span class="package-type-tag">In-Depth Package</span>
+            <div class="pricing-amount"><span class="currency">₹</span>555</div>
+            <h3 class="pricing-title">Three Questions</h3>
+          </div>
           <ul class="pricing-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Personal interpretation of each question
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Emotional and situational insight
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Brief general guidance included
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Delivery within 48 hours
-            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Personal interpretation of 3 questions</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Comprehensive multi-area exploration</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Complimentary general guidance</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Delivery within 48 hours</li>
           </ul>
-          <a href="#booking" class="btn btn--secondary" data-package="three-questions">Book This Reading</a>
+          <a href="#booking" class="btn btn--secondary" data-package="three-questions" style="width: 100%; border-radius: 9999px;">Book This Reading ✦</a>
         </div>
       </div>
 
-      <!-- Live Session Packages -->
-      <div class="pricing-grid pricing-grid--live">
+      <!-- Live Session Packages Bar -->
+      <div class="pricing-grid pricing-grid--live" style="margin-top: var(--space-2xl);">
         <!-- ₹777 -->
         <div class="pricing-card pricing-card--live reveal reveal-delay-1">
           <div class="pricing-live-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Live Session
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Live Voice Session
           </div>
           <div class="pricing-amount"><span class="currency">₹</span>777</div>
-          <h3 class="pricing-title">Reading over a Call</h3>
+          <h3 class="pricing-title">30-Min Voice Call Session</h3>
           <ul class="pricing-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              30-minute personal voice session
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Real-time intuitive interpretation
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Emotional and situational insight
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Scheduled based on mutual availability
-            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30 minutes 1-on-1 personal voice session</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Real-time interactive energy reading</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Scheduled based on mutual availability</li>
           </ul>
-          <a href="#booking" class="btn btn--secondary" data-package="call-reading">Book This Session</a>
+          <a href="#booking" class="btn btn--secondary" data-package="call-reading" style="width: 100%; border-radius: 9999px;">Book Live Voice Session ✦</a>
         </div>
 
         <!-- ₹999 -->
         <div class="pricing-card pricing-card--live reveal reveal-delay-2">
           <div class="pricing-live-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-            Live Session
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            Live Video Session
           </div>
           <div class="pricing-amount"><span class="currency">₹</span>999</div>
-          <h3 class="pricing-title">Reading over a Video Call</h3>
+          <h3 class="pricing-title">30-Min Video Call Session</h3>
           <ul class="pricing-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              30-minute personal video session
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Face-to-face intuitive interpretation
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Emotional and situational insight
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Scheduled based on mutual availability
-            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30 minutes face-to-face video session</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Direct live card spreads & discussion</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Scheduled based on mutual availability</li>
           </ul>
-          <a href="#booking" class="btn btn--secondary" data-package="video-call-reading">Book This Session</a>
+          <a href="#booking" class="btn btn--secondary" data-package="video-call-reading" style="width: 100%; border-radius: 9999px;">Book Live Video Session ✦</a>
         </div>
       </div>
 
-      <p class="pricing-note reveal">
-        ✦ Please frame each question separately. A brief general guidance message is complimentary with every reading.
+      <p class="pricing-note reveal" style="text-align: center; margin-top: var(--space-xl); color: var(--text-light); font-size: 0.85rem;">
+        ✦ <strong>Note:</strong> Please frame each question separately. A brief general guidance message is included complimentary with every reading.
       </p>
     </div>
   </section>
@@ -471,38 +546,37 @@
        ============================================ -->
   <section class="section section--pale" id="how-it-works">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Process</span>
+      <div class="section-header reveal" style="text-align: center; margin-bottom: var(--space-2xl);">
+        <span class="section-label">Simple Process</span>
         <h2>How It Works</h2>
-        <p>A thoughtful, simple process designed with your comfort and clarity in mind.</p>
+        <p style="max-width: 580px; margin: 0 auto;">A thoughtful, 4-step journey designed for your total comfort, privacy, and clarity.</p>
       </div>
 
-      <div class="steps-grid">
-        <div class="step-card reveal reveal-delay-1">
-          <div class="step-number">1</div>
-          <h4>Choose a Reading</h4>
-          <p>Select the package that suits your needs — one, two, or three questions.</p>
+      <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+        <div class="step-card reveal reveal-delay-1" style="background: var(--white); padding: 28px 20px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 25px rgba(0,0,0,0.03); text-align: center;">
+          <div class="step-badge" style="background: rgba(185, 167, 232, 0.2); color: var(--deep-plum); padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 16px;">✦ STEP 01</div>
+          <h4 style="font-family: var(--font-serif); color: var(--deep-plum); font-size: 1.1rem; margin-bottom: 8px;">Select Package</h4>
+          <p style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5; margin: 0;">Choose the reading option that matches your current situation.</p>
         </div>
-        <div class="step-card reveal reveal-delay-2">
-          <div class="step-number">2</div>
-          <h4>Share Your Questions</h4>
-          <p>Frame each question separately with as much clarity as you feel comfortable sharing.</p>
+
+        <div class="step-card reveal reveal-delay-2" style="background: var(--white); padding: 28px 20px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 25px rgba(0,0,0,0.03); text-align: center;">
+          <div class="step-badge" style="background: rgba(233, 167, 131, 0.2); color: #92400E; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 16px;">✦ STEP 02</div>
+          <h4 style="font-family: var(--font-serif); color: var(--deep-plum); font-size: 1.1rem; margin-bottom: 8px;">Frame Questions</h4>
+          <p style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5; margin: 0;">Frame your questions separately with clarity of thought and language.</p>
         </div>
-        <div class="step-card reveal reveal-delay-3">
-          <div class="step-number">3</div>
-          <h4>Complete Payment</h4>
-          <p>Confirm your booking through UPI payment and upload the confirmation screenshot.</p>
+
+        <div class="step-card reveal reveal-delay-3" style="background: var(--white); padding: 28px 20px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 25px rgba(0,0,0,0.03); text-align: center;">
+          <div class="step-badge" style="background: rgba(16, 185, 129, 0.15); color: #047857; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 16px;">✦ STEP 03</div>
+          <h4 style="font-family: var(--font-serif); color: var(--deep-plum); font-size: 1.1rem; margin-bottom: 8px;">UPI Payment</h4>
+          <p style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5; margin: 0;">Pay via UPI (GPay/Paytm/PhonePe) and upload your payment screenshot.</p>
         </div>
-        <div class="step-card reveal reveal-delay-4">
-          <div class="step-number">4</div>
-          <h4>Receive Your Reading</h4>
-          <p>Your personally interpreted reading will be delivered within 48 hours.</p>
+
+        <div class="step-card reveal reveal-delay-4" style="background: var(--white); padding: 28px 20px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 25px rgba(0,0,0,0.03); text-align: center;">
+          <div class="step-badge" style="background: rgba(59, 130, 246, 0.15); color: #1D4ED8; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 16px;">✦ STEP 04</div>
+          <h4 style="font-family: var(--font-serif); color: var(--deep-plum); font-size: 1.1rem; margin-bottom: 8px;">Receive Reading</h4>
+          <p style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5; margin: 0;">Your personally interpreted reading is delivered within 48 hours.</p>
         </div>
       </div>
-
-      <p class="pricing-note reveal" style="margin-top: var(--space-2xl);">
-        Live or coordinated sessions may be scheduled based on mutual availability.
-      </p>
     </div>
   </section>
 
@@ -729,6 +803,21 @@
           <p>"What do I need to be aware of before moving forward?"</p>
         </div>
       </div>
+
+      <!-- Guidance on Framing Questions -->
+      <div class="question-guidance-card reveal" style="margin-top: var(--space-xl); padding: var(--space-xl); background: var(--white); border-radius: var(--radius-lg); border-left: 4px solid var(--warm-peach); box-shadow: var(--shadow-sm);">
+        <div style="display: flex; gap: var(--space-md); align-items: flex-start;">
+          <div class="icon-circle" style="background: rgba(233, 167, 131, 0.15); color: var(--warm-peach); flex-shrink: 0; width: 44px; height: 44px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4 style="color: var(--deep-plum); margin-bottom: var(--space-xs); font-family: var(--font-serif);">Framing Your Questions with Clarity</h4>
+            <p style="color: var(--text-body); margin-bottom: 0; font-size: var(--fs-small); line-height: 1.6;">
+              Frame each question separately with clarity of thought and language. Avoid combining two questions into one. For example — <em>"Will I get the job?"</em> and <em>"How do people at my work feel about me?"</em> are two separate questions, so don’t combine them into one just because they are both about work/career.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -841,14 +930,28 @@
 
         <div class="faq-item reveal">
           <button class="faq-question" aria-expanded="false" id="faq-btn-3" aria-controls="faq-answer-3">
-            <span>What is the best way to frame my questions for a powerful reading?</span>
+            <span>What kind of questions yield the best answers in a Tarot reading?</span>
             <span class="faq-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
             </span>
           </button>
           <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3">
             <div class="faq-answer-inner">
-              <p>Tarot works best with open-ended, empowerment-focused questions that respect free will. Instead of asking "Will my ex come back?", try framing it as "What lessons did I learn from my past connection, and how can I heal to prepare for new love?". Focus the question on your own energy, feelings, and choices.</p>
+              <p>Tarot gives best answers around self-reflection to understand your own patterns and blockages. You can ask questions like <strong>“What are the current blockages in my situation?”</strong> or <strong>“What should I understand about myself to achieve more success?”</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-btn-3b" aria-controls="faq-answer-3b">
+            <span>What is the best way to frame my questions?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-3b" role="region" aria-labelledby="faq-btn-3b">
+            <div class="faq-answer-inner">
+              <p>Frame each question separately with clarity of thought and language. Avoid combining two questions into one. For example — <em>"Will I get the job?"</em> and <em>"How do people at my work feel about me?"</em> are two separate questions, so don’t combine them into one just because they are both about work/career.</p>
             </div>
           </div>
         </div>
@@ -916,126 +1019,144 @@
        BOOKING FORM
        ============================================ -->
   <section class="section section--pale" id="booking">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Book</span>
+    <div class="container" style="max-width: 1000px;">
+      <div class="section-header reveal" style="text-align: center; margin-bottom: var(--space-xl);">
+        <span class="section-label">Quick Booking</span>
         <h2>Book Your Reading</h2>
-        <p>Fill in your details below and Pavi will personally prepare your reading.</p>
+        <p style="margin: 0 auto;">Reserve your session in under 2 minutes. Pavi will personally prepare your reading.</p>
       </div>
 
-      <div class="booking-form-wrapper reveal">
-        <form class="booking-form" id="bookingForm" novalidate>
+      <div class="booking-form-wrapper reveal" style="padding: var(--space-xl); border-radius: 24px; background: var(--white); box-shadow: 0 10px 35px rgba(0,0,0,0.04); border: 1px solid var(--border-soft);">
+        <form class="booking-form" id="bookingForm" novalidate style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: start;">
           <!-- Honeypot for spam -->
           <div style="display:none;" aria-hidden="true">
             <input type="text" name="website" tabindex="-1" autocomplete="off" />
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="fullName">Full Name <span class="required">*</span></label>
-              <input type="text" class="form-input" id="fullName" name="fullName" placeholder="Your full name" required />
-              <p class="form-error">Please enter your full name.</p>
+          <!-- LEFT COLUMN: Contact & Questions -->
+          <div class="booking-form-col-left" style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="form-section-title" style="margin-top: 0; font-size: 1.05rem;">1. Contact & Questions</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" class="form-input" id="fullName" name="fullName" placeholder="Your name" required />
+                <p class="form-error">Please enter your name.</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="whatsapp">WhatsApp Number <span class="required">*</span></label>
+                <input type="tel" class="form-input" id="whatsapp" name="whatsapp" placeholder="+91 XXXXX XXXXX" required />
+                <p class="form-error">Please enter WhatsApp number.</p>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="email">Email Address <span class="required">*</span></label>
-              <input type="email" class="form-input" id="email" name="email" placeholder="your@email.com" required />
-              <p class="form-error">Please enter a valid email address.</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                <input type="email" class="form-input" id="email" name="email" placeholder="your@email.com" required />
+                <p class="form-error">Please enter valid email.</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="readingPackage">Package <span class="required">*</span></label>
+                <select class="form-select" id="readingPackage" name="readingPackage" required>
+                  <option value="" disabled selected>Select package</option>
+                  <option value="one-question">₹222 — One Question</option>
+                  <option value="two-questions">₹333 — Two Questions (Popular)</option>
+                  <option value="three-questions">₹555 — Three Questions</option>
+                  <option value="call-reading">₹777 — Call Reading (30m)</option>
+                  <option value="video-call-reading">₹999 — Video Call (30m)</option>
+                </select>
+                <p class="form-error">Please select package.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="whatsapp">WhatsApp Number <span class="required">*</span></label>
-              <input type="tel" class="form-input" id="whatsapp" name="whatsapp" placeholder="+91 XXXXX XXXXX" required />
-              <p class="form-error">Please enter your WhatsApp number.</p>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="readingPackage">Reading Package <span class="required">*</span></label>
-              <select class="form-select" id="readingPackage" name="readingPackage" required>
-                <option value="" disabled selected>Select a package</option>
-                <option value="one-question">₹222 — One Question</option>
-                <option value="two-questions">₹333 — Two Questions (Most Chosen)</option>
-                <option value="three-questions">₹555 — Three Questions</option>
-                <option value="call-reading">₹777 — Reading over a Call (30 mins)</option>
-                <option value="video-call-reading">₹999 — Reading over a Video Call (30 mins)</option>
-              </select>
-              <p class="form-error">Please select a reading package.</p>
-            </div>
-          </div>
-
-          <div class="form-section-title">Your Questions</div>
-
-          <div class="form-group">
-            <label class="form-label" for="question1">Question 1 <span class="required">*</span></label>
-            <textarea class="form-textarea" id="question1" name="question1" placeholder="Frame your first question with as much clarity as possible..." rows="3" required></textarea>
-            <p class="form-error">Please enter your question.</p>
-          </div>
-
-          <div class="form-group question-field" id="question2Group" style="display: none;">
-            <label class="form-label" for="question2">Question 2</label>
-            <textarea class="form-textarea" id="question2" name="question2" placeholder="Frame your second question separately..." rows="3"></textarea>
-          </div>
-
-          <div class="form-group question-field" id="question3Group" style="display: none;">
-            <label class="form-label" for="question3">Question 3</label>
-            <textarea class="form-textarea" id="question3" name="question3" placeholder="Frame your third question separately..." rows="3"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="context">Relevant Context <span style="color: var(--text-light); font-weight: 400;">(Optional)</span></label>
-            <textarea class="form-textarea" id="context" name="context" placeholder="Share any background or context that might help Pavi understand your situation better..." rows="3"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="deliveryMethod">Preferred Delivery Method <span class="required">*</span></label>
-            <select class="form-select" id="deliveryMethod" name="deliveryMethod" required>
-              <option value="" disabled selected>How would you like to receive your reading?</option>
-              <option value="whatsapp-text">WhatsApp Text</option>
-              <option value="whatsapp-voice">WhatsApp Voice Note</option>
-              <option value="email">Email</option>
-            </select>
-            <p class="form-error">Please select a delivery method.</p>
-          </div>
-
-          <div class="form-section-title">Payment</div>
-
-          <div class="premium-card" style="margin-bottom: var(--space-xl); padding: var(--space-xl);">
-            <p style="margin-bottom: var(--space-md);"><strong>UPI Payment Details</strong></p>
-            <p style="font-size: var(--fs-small); color: var(--text-body);">
-              UPI ID: <strong id="upiId">pavibenwal@paytm</strong><br/>
-              <span style="color: var(--text-light);">Please send the exact amount for your chosen package and upload the screenshot below.</span>
-            </p>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label">Payment Confirmation Screenshot <span class="required">*</span></label>
-            <div class="file-upload" id="fileUpload">
-              <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required />
-              <p class="file-upload-text">
-                <strong>Click to upload</strong> or drag and drop<br/>
-                <span style="font-size: var(--fs-xs); color: var(--text-light);">PNG, JPG, or WebP (max 5MB)</span>
+            <div class="form-guidance-box" style="background: rgba(185, 167, 232, 0.12); border-radius: 12px; padding: 10px 14px; border-left: 3px solid var(--pattern-purple);">
+              <p style="margin: 0; font-size: 0.78rem; color: var(--deep-plum); line-height: 1.4;">
+                💡 <strong>Framing Tip:</strong> Ask questions separately with clarity (e.g., <em>"Will I get the job?"</em> & <em>"How do coworkers feel?"</em> are 2 separate questions).
               </p>
             </div>
-            <p class="form-helper" id="filePreviewName" style="display: none;"></p>
-            <p class="form-error">Please upload your payment screenshot.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="question1">Question 1 <span class="required">*</span></label>
+              <textarea class="form-textarea" id="question1" name="question1" placeholder="Frame your question clearly..." rows="2" required></textarea>
+              <p class="form-error">Please enter your question.</p>
+            </div>
+
+            <div class="form-group question-field" id="question2Group" style="display: none;">
+              <label class="form-label" for="question2">Question 2</label>
+              <textarea class="form-textarea" id="question2" name="question2" placeholder="Frame second question separately..." rows="2"></textarea>
+            </div>
+
+            <div class="form-group question-field" id="question3Group" style="display: none;">
+              <label class="form-label" for="question3">Question 3</label>
+              <textarea class="form-textarea" id="question3" name="question3" placeholder="Frame third question separately..." rows="2"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" style="flex: 1;">
+                <label class="form-label" for="deliveryMethod">Delivery Method <span class="required">*</span></label>
+                <select class="form-select" id="deliveryMethod" name="deliveryMethod" required>
+                  <option value="" disabled selected>Choose delivery</option>
+                  <option value="whatsapp-voice">WhatsApp Voice Note</option>
+                  <option value="whatsapp-text">WhatsApp Text</option>
+                  <option value="email">Email</option>
+                </select>
+                <p class="form-error">Select delivery.</p>
+              </div>
+
+              <div class="form-group" style="flex: 1;">
+                <label class="form-label" for="context">Context <span style="color: var(--text-light); font-weight: 400;">(Optional)</span></label>
+                <input type="text" class="form-input" id="context" name="context" placeholder="Brief background..." />
+              </div>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label class="form-checkbox-wrapper">
-              <input type="checkbox" class="form-checkbox" id="consent" name="consent" required />
-              <span class="form-checkbox-label">
-                I understand that tarot readings are for personal reflection and emotional guidance only, not a replacement for professional medical, legal, financial, or mental-health advice. I consent to sharing this information for the purpose of receiving my reading. <span class="required">*</span>
-              </span>
-            </label>
-            <p class="form-error">Please agree to continue.</p>
-          </div>
+          <!-- RIGHT COLUMN: Payment & Confirmation -->
+          <div class="booking-form-col-right" style="display: flex; flex-direction: column; gap: 16px; background: rgba(0,0,0,0.015); padding: 20px; border-radius: 18px; border: 1px solid rgba(0,0,0,0.04);">
+            <div class="form-section-title" style="margin-top: 0; font-size: 1.05rem;">2. Payment & Confirmation</div>
 
-          <div style="text-align: center; margin-top: var(--space-xl);">
-            <button type="submit" class="btn btn--primary btn--lg" id="submitBtn">
-              Submit Booking
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <div class="upi-box-compact" style="background: rgba(233, 167, 131, 0.12); border: 1px solid rgba(233, 167, 131, 0.3); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px;">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                  <span style="font-size: 0.72rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; display: block;">UPI Payment ID</span>
+                  <strong id="upiId" style="font-size: 1.05rem; color: var(--deep-plum);">pavibenwal@paytm</strong>
+                </div>
+                <button type="button" class="btn btn--sm btn--ghost" id="copyUpiBtn" onclick="copyUpiId()" style="border-radius: 9999px; padding: 6px 14px; font-size: 0.78rem; background: var(--white);">
+                  📋 Copy UPI
+                </button>
+              </div>
+              <p style="margin: 0; font-size: 0.75rem; color: var(--text-body); line-height: 1.3;">
+                Send package amount via GPay / PhonePe / Paytm to UPI ID above, then attach screenshot.
+              </p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Payment Screenshot <span class="required">*</span></label>
+              <div class="file-upload" id="fileUpload" style="padding: 24px var(--space-md); border-radius: 16px; text-align: center; background: var(--white);">
+                <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required />
+                <p class="file-upload-text" style="margin: 0; font-size: 0.85rem;">
+                  <strong>Click to upload payment screenshot</strong><br/>
+                  <span style="font-size: 0.72rem; color: var(--text-light);">PNG, JPG, or WebP (max 5MB)</span>
+                </p>
+              </div>
+              <p class="form-helper" id="filePreviewName" style="display: none;"></p>
+              <p class="form-error">Please upload payment screenshot.</p>
+            </div>
+
+            <div class="form-group" style="margin-top: auto;">
+              <label class="form-checkbox-wrapper">
+                <input type="checkbox" class="form-checkbox" id="consent" name="consent" required />
+                <span class="form-checkbox-label" style="font-size: 0.76rem; line-height: 1.4;">
+                  I understand tarot readings are for personal guidance and reflection only. <span class="required">*</span>
+                </span>
+              </label>
+              <p class="form-error">Please agree to continue.</p>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" id="submitBtn" style="width: 100%; border-radius: 9999px; font-weight: 600; padding: 14px 20px;">
+              Confirm Booking ✦
             </button>
           </div>
         </form>
@@ -1107,6 +1228,9 @@
 
       <div class="footer-bottom">
         <p class="footer-tagline">Tarot for clarity, reflection, healing and intentional choice.</p>
+        <p class="footer-credit" style="font-size: var(--fs-xs); color: rgba(255, 255, 255, 0.7); margin-top: var(--space-xs); margin-bottom: 0;">
+          Made by <a href="https://curiouskaizer.com" target="_blank" rel="noopener noreferrer" style="color: var(--warm-peach); text-decoration: none; font-weight: var(--fw-semibold); border-bottom: 1px dashed var(--warm-peach);">curiouskaizer</a>
+        </p>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Disclaimer</a>
@@ -1130,12 +1254,7 @@
     </svg>
   </a>
 
-  <!-- ============================================
-       MOBILE STICKY BOOKING
-       ============================================ -->
-  <div class="mobile-booking-sticky" id="mobileBooking">
-    <a href="#booking" class="btn btn--primary">Book a Reading ✦</a>
-  </div>
+
 
   <!-- ============================================
        CONFIRMATION MODAL
@@ -1151,6 +1270,19 @@
       <p style="color: var(--text-body); margin-bottom: var(--space-lg);">Your booking has been received. You will receive a confirmation message shortly.</p>
       <p style="font-size: var(--fs-small); color: var(--text-light); margin-bottom: var(--space-xl);">Pavi will personally prepare your reading and deliver it within 48 hours.</p>
       <button class="btn btn--primary" id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <!-- ============================================
+       REVIEW SCREENSHOT MODAL
+       ============================================ -->
+  <div class="review-modal" id="reviewModal" role="dialog" aria-hidden="true">
+    <div class="review-modal-backdrop" onclick="closeReviewModal()"></div>
+    <div class="review-modal-content">
+      <button class="review-modal-close" onclick="closeReviewModal()" aria-label="Close modal">✕</button>
+      <div class="review-modal-body">
+        <img id="reviewModalImg" src="" alt="Real Client Chat Review" />
+      </div>
     </div>
   </div>
 

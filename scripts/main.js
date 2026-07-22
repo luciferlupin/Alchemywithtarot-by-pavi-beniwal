@@ -413,3 +413,79 @@ function initPricingToBooking() {
     });
   });
 }
+
+// ============================================
+// REVIEW LIGHTBOX MODAL
+// ============================================
+window.openReviewModal = function(imgSrc) {
+  const modal = document.getElementById('reviewModal');
+  const modalImg = document.getElementById('reviewModalImg');
+  if (!modal || !modalImg) return;
+
+  modalImg.src = imgSrc;
+  modal.classList.add('active');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeReviewModal = function() {
+  const modal = document.getElementById('reviewModal');
+  if (!modal) return;
+
+  modal.classList.remove('active');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    window.closeReviewModal();
+  }
+});
+
+// ============================================
+// APPLE SEGMENTED CONTROL SWITCHER
+// ============================================
+window.switchReviewTab = function(tab) {
+  const storiesView = document.getElementById('testimonialsStoriesView');
+  const screenshotsView = document.getElementById('testimonialsScreenshotsView');
+  const storiesBtn = document.getElementById('tabStoriesBtn');
+  const screenshotsBtn = document.getElementById('tabScreenshotsBtn');
+
+  if (!storiesView || !screenshotsView || !storiesBtn || !screenshotsBtn) return;
+
+  if (tab === 'stories') {
+    storiesView.style.display = 'grid';
+    screenshotsView.style.display = 'none';
+    storiesBtn.classList.add('active');
+    screenshotsBtn.classList.remove('active');
+  } else {
+    storiesView.style.display = 'none';
+    screenshotsView.style.display = 'grid';
+    storiesBtn.classList.remove('active');
+    screenshotsBtn.classList.add('active');
+  }
+};
+
+// ============================================
+// COPY UPI ID HELPER
+// ============================================
+window.copyUpiId = function() {
+  const upiId = 'pavibenwal@paytm';
+  navigator.clipboard.writeText(upiId).then(() => {
+    const btn = document.getElementById('copyUpiBtn');
+    if (btn) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '✓ Copied!';
+      btn.style.background = 'var(--deep-plum)';
+      btn.style.color = 'var(--white)';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.style.color = '';
+      }, 2000);
+    }
+  }).catch(() => {
+    alert('UPI ID: pavibenwal@paytm');
+  });
+};
